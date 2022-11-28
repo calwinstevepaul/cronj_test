@@ -1,0 +1,421 @@
+{
+	"info": {
+		"_postman_id": "6414a19c-f967-4cc3-9b90-4acd1c588022",
+		"name": "cronj - Calwin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17885094"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": {\r\n        \"first\": \"calwin\",\r\n        \"last\": \"paul\",\r\n        \"middle\": \"steve\"\r\n    },\r\n    \"dob\": \"22/08/1998\",\r\n    \"email\": \"calwinstevepaul@gmail.com\",\r\n    \"phone\": \"9566557724\",\r\n    \"occupation\": \"SDE\",\r\n    \"company\": \"testComp\",\r\n    \"password\": \"hello123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": {\r\n        \"first\": \"calwin\",\r\n        \"last\": \"paul\",\r\n        \"middle\": \"steve\"\r\n    },\r\n    \"dob\": \"22/08/1998\",\r\n    \"email\": \"calwinstevepaul@gmail.com\",\r\n    \"phone\": \"9566557724\",\r\n    \"occupation\": \"SDE\",\r\n    \"company\": \"testComp\",\r\n    \"password\": \"hello123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "237"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ed-ra87DCF9Vqf5P6PiUj4sBf4Mjvs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Nov 2022 14:41:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"6384c8b6f99ddc085c0d7908\",\n    \"name\": {\n        \"first\": \"calwin\",\n        \"last\": \"paul\",\n        \"middle\": \"steve\"\n    },\n    \"dob\": \"22/08/1998\",\n    \"email\": \"calwinstevepaul@gmail.com\",\n    \"phone\": \"9566557724\",\n    \"occupation\": \"SDE\",\n    \"company\": \"testComp\",\n    \"password\": \"$2b$10$oT82DB/ENzAowwsCsFa4B.AmnV3JConorXsW0WDfWDv4oc5dVp4.K\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mzg0Yzg4ZmY5OWRkYzA4NWMwZDc5MDYiLCJpYXQiOjE2Njk2NTk0Mzd9.0_u9P84c9Tv9E2aEGI8RDqDx5rum345wy2ejU9OOY04",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\":\"6384c88ff99ddc085c0d7906\",\r\n    \"name\": {\r\n        \"first\": \"calwin.\",\r\n        \"last\": \"paul\",\r\n        \"middle\": \"steve\"\r\n    },\r\n    \"dob\": \"22/08/1998\",\r\n    \"email\": \"calwinstevepaul@gmail.com\",\r\n    \"phone\": \"9566557724\",\r\n    \"occupation\": \"SDE\",\r\n    \"company\": \"testComp\",\r\n    \"password\": \"hello123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"6384c88ff99ddc085c0d7906\",\r\n    \"name\": {\r\n        \"first\": \"calwin.\",\r\n        \"last\": \"paul\",\r\n        \"middle\": \"steve\"\r\n    },\r\n    \"dob\": \"22/08/1998\",\r\n    \"email\": \"calwinstevepaul@gmail.com\",\r\n    \"phone\": \"9566557724\",\r\n    \"occupation\": \"SDE\",\r\n    \"company\": \"testComp\",\r\n    \"password\": \"hello123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "290"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"122-7EBEFtzv7bxiTW+4pb2ehLFWrSg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Nov 2022 15:23:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": {\n        \"first\": \"calwin.\",\n        \"last\": \"paul\",\n        \"middle\": \"steve\"\n    },\n    \"_id\": \"6384c88ff99ddc085c0d7906\",\n    \"dob\": \"22/08/1998\",\n    \"email\": \"calwinstevepaul@gmail.com\",\n    \"phone\": \"9566557724\",\n    \"occupation\": \"SDE\",\n    \"company\": \"testComp\",\n    \"password\": \"$2b$10$oT82DB/ENzAowwsCsFa4B.AmnV3JConorXsW0WDfWDv4oc5dVp4.K\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mzg1MTU4NTRmOWIyODA1OTAxZjc1NjEiLCJpYXQiOjE2Njk2NjYyNzF9.v_hItaBDpw_lKSzCxUeqXZUy3P02cPyOksdqc3Dbby8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user?_id=6384c88ff99ddc085c0d7906",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "6384c88ff99ddc085c0d7906"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user?_id=6384c88ff99ddc085c0d7906",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "6384c88ff99ddc085c0d7906"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "292"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"124-mGkTF5VPjK8oFZuWCDUZoTqD4y4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Nov 2022 19:40:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": {\n            \"first\": \"calwin.\",\n            \"last\": \"paul\",\n            \"middle\": \"steve\"\n        },\n        \"_id\": \"6384c88ff99ddc085c0d7906\",\n        \"dob\": \"22/08/1998\",\n        \"email\": \"calwinstevepaul@gmail.com\",\n        \"phone\": \"9566557724\",\n        \"occupation\": \"SDE\",\n        \"company\": \"testComp\",\n        \"password\": \"$2b$10$NSXmrnkL.KAx2VeU72VpJuFFgg6rDvtgl6fbVMi8q8EWN.aQ4nIN2\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"steve@gmail.com\",\r\n    \"password\": \"hello123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/loginUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"loginUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"calwinstevepaul@gmail.com\",\r\n    \"password\": \"hello123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/loginUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"loginUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "171"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ab-Lx091SZoITq+Iqu613LZWjwoAkI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Nov 2022 19:08:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mzg0Yzg4ZmY5OWRkYzA4NWMwZDc5MDYiLCJpYXQiOjE2Njk2NjI0ODR9.wdxOioRSxukUl3nZJeEB0_jL27vSklXwlVntRyuUWY8\"\n}"
+				}
+			]
+		}
+	]
+}
