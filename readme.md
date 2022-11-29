@@ -12,3 +12,10 @@
 * GET and PUT apis can be only used  ````access token```` in token field in header
 
 ****
+**Project setup:**
+* clone the repo ````git clone https://github.com/calwinstevepaul/cronj_test.git````
+* navigate to project file ````cd cronj_backend_test_calwin````
+* install node modules ````npm i````
+* start application ````node index.js```` or ````nodemon index.js````
+
+
